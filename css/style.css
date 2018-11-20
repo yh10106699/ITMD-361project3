@@ -226,8 +226,8 @@ time, mark, audio, video {
 
 .bnsimage{
   display:block;
-  width: 30%;
-  height: 20%;
+  width: 80%;
+  height: 80%;
   float: left;
   position: relative;
   animation: fadein 2s;
@@ -243,4 +243,10 @@ time, mark, audio, video {
 #map {
   height: 400px;
   width: 100%;
+}
+
+.slideshow {
+  width: 100%;
+  margin: 10px auto;
+  vertical-align: middle;
 }
