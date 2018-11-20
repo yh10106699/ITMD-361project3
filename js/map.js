@@ -1,27 +1,24 @@
-function init(){
+function initMap(){
   var el = document.getElementById('map');
-  var myLocation = new google.maps.LatLng("39.913724,116.443683");
+  var qibao = new google.maps.LatLng(31.157839,121.361133);
+  var chenghuang = new google.maps.LatLng(31.231994,121.498188)
 //map setting parameters
   var mapOptions = {
-    center: myLocation,
-    zoom: 18,
-    mapTypeId: google.maps.MapTypeId.SATELLITE,
-    mapTypeControlOptions: {
-      position: google.maps.ControlPostition.BOTTOM_CENTER
-    }
+    center: new google.maps.LatLng(31.192209,121.442245),
+    zoom: 12,
   };
   var myMap = new google.maps.Map(el, mapOptions);
+
   var marker = new google.maps.Marker({
-    position: myLocation,
+    position: qibao,
     map: myMap,
     animation:google.maps.Animation.BOUNCE,
-  })
+  });
 
-  var contentString ='<h1> Spaces you can go in Shanghai </h1>'
-  var infowindow = new google.maps.infowindow({
-    content: contentString
+  var marker1 = new google.maps.Marker({
+    position: chenghuang,
+    map: myMap,
+    animation:google.maps.Animation.BOUNCE,
   });
 
 }
-
-//google.maps.event.addDomListener(window, 'load', init);

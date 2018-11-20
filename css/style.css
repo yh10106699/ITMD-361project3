@@ -239,3 +239,8 @@ time, mark, audio, video {
 .bnsvideo{
   display: inline-block;
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+}
