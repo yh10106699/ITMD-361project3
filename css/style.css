@@ -1,0 +1,241 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.indexbody {
+  background:url('indexbackground.jpg');
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+
+.resumebody {
+  background:url('background.jpg');
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.bnsbody {
+  background:url('bnsbackground.jpg');
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.navbar{
+  position: relative;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.navbar a.active{
+  background-color: #4b5132;
+  color: white;
+}
+
+.navbar ul{
+  background-color: #a6a6a6;
+  margin: auto;
+  padding: 10px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.navbar li{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  float: right;
+  list-style-type: none;
+
+}
+.navbar a{
+  display: inline-block;
+  text-align:center;
+  text-decoration: none;
+  padding: 15px;
+  transition: all 0.3s;
+
+}
+
+.navbar a:hover{
+  background-color: #29B6E6;
+  border-bottom: 5px solid #29B6F6;
+}
+
+.resume-wrapper {
+  padding-bottom: 20px;
+  position: relative;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 2px #999;
+  margin: 30px auto;
+  padding-bottom: 40px;
+  background: #ECEFF1;
+  font-family: 'Roboto Slab', serif;
+}
+
+.resumeTitle{
+  text-align: center;
+  font-size: 35px;
+  color: #ff6600;
+}
+
+.resume-wrapper section{
+  margin: 10px 40px 30px 40px;
+  animation: fadein 0.5s;
+}
+
+.resume-wrapper h2{
+  margin: 10px auto;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  border-bottom: 1px solid #333;
+}
+
+.resume-wrapper h3 {
+  display: block;
+  font-size: 1.17em;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: bold;
+}
+
+.resume-wrapper ul{
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 40px;
+}
+
+.index-wrapper{
+  padding-bottom: 20px;
+  position: relative;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 2px #999;
+  margin: 30px auto;
+  padding-bottom: 40px;
+  background: #ECEFF1;
+  opacity: 0.9;
+}
+
+.subsection{
+  width: auto;
+  height: auto;
+  margin: 30px 20px 30px 20px;
+  overflow:hidden;
+}
+
+.one{
+  display:inline-block;
+  width: 40%;
+  height: auto;
+  float: right;
+  position: relative;
+  animation: fadein 2s;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 2px #999;
+}
+
+.two{
+  display:block;
+  width: 25%;
+  height: 30%;
+  float: right;
+  position: relative;
+  animation: fadein 2s;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 2px #999;
+}
+
+.subsection h2{
+  text-align: center;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.subsection p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8em;
+}
+
+.subsection h3{
+  font-size: 2.5em;
+}
+
+.bns-wrapper{
+  padding-bottom: 20px;
+  position: relative;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 2px #999;
+  margin: 30px auto;
+  padding-bottom: 40px;
+  background: #ECEFF1;
+  opacity: 0.9;
+}
+
+.bns-wrapper h1{
+  text-align: center;
+  font-size: 3.5em;
+  font-family: 'Charmonman', cursive;
+}
+
+.subsection.comment{
+  font-size: 50px;
+}
+
+.subsection video{
+  width:auto;
+  height: auto;
+}
+
+.subsection h2{
+  text-align: center;
+}
+
+.bnsimage{
+  display:block;
+  width: 30%;
+  height: 20%;
+  float: left;
+  position: relative;
+  animation: fadein 2s;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 2px #999;
+}
+
+.bnsvideo{
+  display: inline-block;
+}
